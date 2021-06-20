@@ -37,7 +37,7 @@ The core concepts of Docker are images and containers. A Docker image contains e
 
 A Docker container is a running instance of a Docker image.  However, unlike in traditional virtualization with a type 1 or type 2  hypervisor, a Docker container runs on the kernel of the host operating  system. Within a Docker image there is no separate operating system, as  illustrated below.
 
-​			![docker basics image](../assets/docker-beginner/Docker Architecture.png)
+​			![docker basics image](../assets/docker-beginner/DockerArchitecture.png)
 
 
 
