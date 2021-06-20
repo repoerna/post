@@ -77,7 +77,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
     $ docker images
     ```
 
-    ![image-20210619171037859](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619171037859.png)
+    ![image-20210619171037859](../assets/docker-beginner/image-20210619171037859.png)
 
     
 
@@ -105,25 +105,25 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
     
 
-    ![image-20210619171639498](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619171639498.png)
+    ![image-20210619171639498](../assets/docker-beginner/image-20210619171639498.png)
 
     
 
     On the `Tags` menu, you can see available version of the image
 
-    ![image-20210619172254162](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619172254162.png)
+    ![image-20210619172254162](../assets/docker-beginner/image-20210619172254162.png)
 
     
 
     Copy the image pull command, and run it on your terminal. You will see that the image its being pulled from the registry to our local machine.
 
-    ![image-20210619172330555](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619172330555.png)
+    ![image-20210619172330555](../assets/docker-beginner/image-20210619172330555.png)
 
     
 
     if we not specify the tag name it will automatically pull the latest image on the registry. After image pulling finished, we can check the images list again, you will see mongo on the list
 
-    ![image-20210619172634291](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619172634291.png)
+    ![image-20210619172634291](../assets/docker-beginner/image-20210619172634291.png)
 
     
 
@@ -151,7 +151,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
     
 
-    ![image-20210619175204246](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619175204246.png)
+    ![image-20210619175204246](../assets/docker-beginner/image-20210619175204246.png)
 
     You can see on the image there are some container running, and some container stopped
 
@@ -185,13 +185,13 @@ There are many tutorials how to install Docker into your machine, for me, i pref
     $ docker container create --name test-mongo mongo 
     ````
 
-    ![image-20210619175450140](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619175450140.png)
+    ![image-20210619175450140](../assets/docker-beginner/image-20210619175450140.png)
 
     
 
     lets check it using our container,
 
-    ![image-20210619175548397](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619175548397.png)
+    ![image-20210619175548397](../assets/docker-beginner/image-20210619175548397.png)
 
     
 
@@ -211,19 +211,19 @@ There are many tutorials how to install Docker into your machine, for me, i pref
   $ docker container start <container-name>
   ```
 
-  ![image-20210619180651353](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619180651353.png)
+  ![image-20210619180651353](../assets/docker-beginner/image-20210619180651353.png)
 
   
 
   after we run the command, lets check our container list,
 
-  ![image-20210619181049700](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619181049700.png)
+  ![image-20210619181049700](../assets/docker-beginner/image-20210619181049700.png)
 
   as you can see, our `test-mongo` already up and running. In our case, you can see `PORTS` section of `test-mongo` container, we can access the container by using port `27017`.
 
   Lets try connect to mongo, you can use and DB client that support mongo connection like [Robo3T](https://robomongo.org/), but here I'm using Datagrip.
 
-  ![image-20210619194728121](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619194728121.png)
+  ![image-20210619194728121](../assets/docker-beginner/image-20210619194728121.png)
 
   
 
@@ -241,7 +241,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   Let's try create a new container
 
-  ![image-20210619200415435](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619200415435.png)
+  ![image-20210619200415435](../assets/docker-beginner/image-20210619200415435.png)
 
   
 
@@ -255,7 +255,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   Try start the new container, and with this we can access the mongo db.
 
-  ![image-20210619201355403](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619201355403.png)
+  ![image-20210619201355403](../assets/docker-beginner/image-20210619201355403.png)
 
    
 
@@ -269,7 +269,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   Let's try to delete `test-mongo` container
 
-  ![image-20210619201655019](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619201655019.png)
+  ![image-20210619201655019](../assets/docker-beginner/image-20210619201655019.png)
 
   Error will occurred. This is happened because Docker wants that we to stop the container before we remove it. There is two way to handle this, 
 
@@ -293,7 +293,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   For this exmple i will use option 2,
 
-  ![image-20210619202346436](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619202346436.png)
+  ![image-20210619202346436](../assets/docker-beginner/image-20210619202346436.png)
 
   
 
@@ -311,7 +311,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   Let's stop and remove the container, and then remove the `mongo` image
 
-  ![image-20210619233146324](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210619233146324.png)
+  ![image-20210619233146324](../assets/docker-beginner/image-20210619233146324.png)
 
   
 
@@ -325,7 +325,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   You can try create some container and chek the container's logs. This is example of my `Postgres` container.
 
-  ![image-20210620010823457](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210620010823457.png)
+  ![image-20210620010823457](../assets/docker-beginner/image-20210620010823457.png)
 
   
 
@@ -343,7 +343,7 @@ There are many tutorials how to install Docker into your machine, for me, i pref
 
   I will demonstrate using my `postgre` named 'dev-postgre' to get into postgre client inside the contianer.
 
-  ![image-20210620011845187](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210620011845187.png)
+  ![image-20210620011845187](../assets/docker-beginner/image-20210620011845187.png)
 
   
 
@@ -447,9 +447,9 @@ For the example, we need to prepare some code, o demonstrate how to buil an imag
 
   Let's try create container for our app and run it. Then we can check our app using browser. 
 
-  ![image-20210620010257134](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210620010257134.png)
+  ![image-20210620010257134](../assets/docker-beginner/image-20210620010257134.png)
 
-  ![image-20210620010316773](/home/purnanugraha/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20210620010316773.png)
+  ![image-20210620010316773](../assets/docker-beginner/image-20210620010316773.png)
 
 - ### Upload Image to Registry
 
